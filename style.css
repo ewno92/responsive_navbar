@@ -1,0 +1,53 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(112, 158, 185);
+  padding: 3px 30px;
+  font-size: 1.5rem;
+}
+
+.navbar_logo {
+  font-size: 30px;
+  color: white;
+}
+
+.navbar_logo i {
+  color: rgb(74, 91, 245);
+}
+
+.navbar_menu {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+}
+.navbar_menu li:hover {
+  background-color: yellow;
+  border-radius: 4px;
+}
+
+.navbar_menu li {
+  padding: 8px 12px;
+}
+
+.navbar_links {
+  display: flex;
+}
+
+.navbar_links li {
+  list-style-type: none;
+  padding: 2px 20px;
+  font-size: 2rem;
+}
