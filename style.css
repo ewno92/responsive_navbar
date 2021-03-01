@@ -1,7 +1,10 @@
 html {
   font-size: 62.5%;
+  box-sizing: border-box;
 }
 
+root {
+}
 body {
   margin: 0;
   font-family: "Source Sans Pro", sans-serif;
@@ -34,7 +37,7 @@ body {
   padding-left: 0;
 }
 .navbar_menu li:hover {
-  background-color: yellow;
+  background-color: orange;
   border-radius: 4px;
 }
 
@@ -50,4 +53,41 @@ body {
   list-style-type: none;
   padding: 2px 20px;
   font-size: 2rem;
+}
+
+.navbar_toggle {
+  display: none;
+}
+
+@media screen and (max-width: 810px) {
+  .navbar,
+  .navbar_menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar_menu {
+    width: 100%;
+    display: none;
+  }
+
+  .navbar_menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar_links {
+    display: none;
+  }
+  .navbar_toggle {
+    position: absolute;
+    right: 20px;
+    font-size: 25px;
+    display: block;
+  }
+
+  .navbar_links.active,
+  .navbar_menu.active {
+    display: flex;
+  }
 }
